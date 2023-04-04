@@ -5,10 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="javascript.js"></script>
+    <link rel="icon" type="image/x-icon" href="/img/rock-paper-scissors.ico">
     <title>RockPaperScissors- OnlineGame</title>
 </head>
 <body>
-    
+    <div class="container">
+        
+<!--#region header-->
+        <div class="header">
+            <div class="header-text">Rock Paper Scissors</div>
+        </div>
+<!--#endregion-->
+
+<!--#region userSelection-->
+        <div class="userSelection">
+            <div class="subtext">Choose Your Weapon</div>
+            <div class="flex">
+                <div id="btn-box1" class="box">
+                    <div class="image">
+                        <img src="/img/Asset 1.png" alt="rock" class="hand-signatures">
+                    </div>
+                </div>
+                <div id="btn-box1" class="box">
+                    <div class="image">
+                        <img src="/img/Asset 2.png" alt="paper" class="hand-signatures">
+                    </div>
+                </div>
+                <div id="btn-box1" class="box">
+                    <div class="image">
+                        <img src="/img/Asset 3.png" alt="scissors" class="hand-signatures">
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--#endregion userSelection-->
+
+<!--#region score-->
+        <div class="score-table">
+            <div class="flex2">
+            <div class="score-box">
+                <img src="/img/question.png" alt="question-mark" class="score-img">
+                <div class="player">Player1</div>
+                <div class="score-number">0</div>
+            </div>
+            <h3 class="vs">VS</h3>
+            <div class="score-box">
+                <img src="/img/question.png" alt="question-mark" class="score-img">
+                <div class="player">Computer</div>
+                <div class="score-number">0</div>
+            </div>
+        </div>
+        </div>
+<!--#endregion-->
+
+<!--#region footer-->
+<!--<footer class="footer">Copyright &copy; 2023 @stefanbrkic1</footer>-->
+<!--#endregion-->
+       
+    </div>
+
+
 </body>
 </html>
