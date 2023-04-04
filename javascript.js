@@ -39,15 +39,28 @@ function playRound(playerSelection, computerSelection){
 
 }
 
-//Testing result
 
-const playerSelection = "paper";
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
-
-//
+let userScore =0 ;
+let computerScore = 0;
 
 function game(){
     
+    for (let i = 0; i < 5; i++) 
+    {
+        const playerSelection=prompt('Enter your selection(rock/paper/scissors)').toLowerCase();;
+        const computerSelection=getComputerChoice();
+        const gameResult=playRound(playerSelection, computerSelection);
+
+        console.log(gameResult);
+
+        if(gameResult===`You've lost. ${computerSelection} beats ${playerSelection}`){
+            computerScore ++;
+        }
+        else if(gameResult===`You've won. ${playerSelection} beats ${computerSelection}`){
+            userScore ++;
+        }
+    }
 }
-   
+   game();
+
+console.log(`Final score: USER: ${userScore} - COMPUTER ${computerScore}`);
