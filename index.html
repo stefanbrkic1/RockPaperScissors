@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="./img/rock-paper-scissors.ico">
-    <script src="javascript.js"></script>
     <title>RockPaperScissors- OnlineGame</title>
 </head>
 <body>
@@ -22,17 +21,17 @@
         <div class="userSelection">
             <div class="subtext">Choose Your Weapon</div>
             <div class="flex">
-                <div id="btn-box1" class="box">
+                <div id="rockBtn" class="box">
                     <div class="image">
                         <img src="./img/Asset 1.png" alt="rock" class="hand-signatures">
                     </div>
                 </div>
-                <div id="btn-box2" class="box">
+                <div id="paperBtn" class="box">
                     <div class="image">
                         <img src="./img/Asset 2.png" alt="paper" class="hand-signatures">
                     </div>
                 </div>
-                <div id="btn-box3" class="box">
+                <div id="scissorsBtn" class="box">
                     <div class="image">
                         <img src="./img/Asset 3.png" alt="scissors" class="hand-signatures">
                     </div>
@@ -45,18 +44,22 @@
         <div class="score-table">
             <div class="flex2">
             <div class="score-box">
-                <img src="./img/question.png" alt="question-mark" class="score-img">
+                <div id="playerSign">
+                    <img src="./img/question.png" alt="question-mark" class="score-img" id="playerSignImg">
+                </div>
                 <div class="player">Player1</div>
-                <div class="score-number">0</div>
+                <div id="playerScore" class="score-number">0</div>
             </div>
             <h3 class="vs">VS</h3>
             <div class="score-box">
-                <img src="./img/question.png" alt="question-mark" class="score-img">
+                <div id="computerSign">
+                    <img src="./img/question.png" alt="question-mark" class="score-img" id="computerSignImg">
+                </div>
                 <div class="player">Computer</div>
-                <div class="score-number">0</div>
+                <div id="computerScore" class="score-number">0</div>
             </div>
         </div>
-        <div class="result-text">You WON/LOST</div>
+        <div  id="scorePara" class="result-text">You WON/LOST</div>
         </div>
 <!--#endregion-->
 
@@ -67,9 +70,13 @@
     </footer>
 </div>
 <!--#endregion-->
-       
     </div>
 
-
+    <div class="modal" id="endGameModal">
+        <p class="modal-title" id="endgameMsg">You WON</p>
+      <button class="btn btn-restart" id="restartBtn">Play again</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <script src="javascript.js"></script>
 </body>
 </html>
