@@ -149,13 +149,18 @@ body{
     padding-top: 40px;
 }
 
-.footer{
-  position: absolute;
-  bottom: 0;
-  width: 99%;
-  height: 80px; 
-  color: white;
-}
+.footer {
+    height: 80px;
+    color: white;
+
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .footer {
+      position: relative;
+      grid-row-start: -1;
+    }
+  }
 
 .footer-text{
   display: flex;
@@ -194,13 +199,11 @@ a:hover{
     display: block;
   }
 
-  .modal{
+
+  .modal {
     display: flex;
     justify-content: center;
     align-items: center;    
-  }
-
-  .modal {
     font-family: 'Unbounded', cursive;
     position: fixed;
     z-index: 1;
@@ -209,7 +212,8 @@ a:hover{
     width: 300px;
     padding: 30px;
     border-radius: 10px;
-    background-color: var(--primary-dark);
+    background-color: aliceblue;
+    color: #26006e;
     text-align: center;
     font-size: 30px;
     user-select: none;
@@ -224,10 +228,12 @@ a:hover{
     font-weight: bold;
   }
   
-  .btn-restart {
+  .btn-custom {
     padding: 10px 20px;
     margin-top: 25px;
     margin-bottom: 15px;
+    background-color: #4a14ad;
+    color: aliceblue;
   }
   
 

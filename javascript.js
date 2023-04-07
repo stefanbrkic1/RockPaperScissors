@@ -59,7 +59,7 @@ const computerScoreDiv=document.getElementById('computerScore');
 const playerSign=document.getElementById('playerSign');
 const computerSign=document.getElementById('computerSign');
 const scorePara=document.getElementById('scorePara');
-const endGameModal = document.getElementById('endGameModal')
+const endgameModal = document.getElementById('endgameModal')
 const endgameMsg = document.getElementById('endgameMsg')
 const overlay = document.getElementById('overlay')
 const restartBtn = document.getElementById('restartBtn')
@@ -74,7 +74,8 @@ overlay.addEventListener('click', closeEndGameModal)
 
 function handleClick(playerSelection){
   if(gameOver()){
-    openEndGameModal();
+    alert(`GAME OVER ${roundWinner} WON`)
+    restartGame();
     return
   }
 
@@ -129,22 +130,6 @@ function updateScore() {
   computerScoreDiv.textContent = `${computerScore}`
 }
 
-function openEndGameModal() {
-  endGameModal.classList.add('active');
-  overlay.classList.add('active');
-}
-
-function closeEndGameModal() {
-  endGameModal.classList.remove('active');
-  overlay.classList.remove('active');
-}
-
-function setFinalMessage() {
-  return playerScore > computerScore
-    ? (endgameMsg.textContent = 'You won!')
-    : (endgameMsg.textContent = 'You lost...')
-}
-
 function restartGame() {
   playerScore = 0;
   computerScore = 0;
@@ -152,6 +137,6 @@ function restartGame() {
   computerScoreDiv.textContent = '0';
   playerSignImg.src = './img/question.png';
   computerSignImg.src = './img/question.png';
-  endGameModal.classList.remove('active')
+  endgameModal.classList.remove('active')
   overlay.classList.remove('active')
 }
