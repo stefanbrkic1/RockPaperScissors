@@ -13,7 +13,7 @@ function playRound(playerSelection, computerSelection){
     playerSelection==='SCISSORS' && computerSelection==='PAPER')
     {
       playerScore++;
-      roundWinner=`player`; 
+      roundWinner=`PLAYER`; 
     }
     
     else if(
@@ -22,7 +22,7 @@ function playRound(playerSelection, computerSelection){
       playerSelection==='SCISSORS' && computerSelection==='ROCK')
       {
         computerScore++;
-        roundWinner=`computer`; 
+        roundWinner=`COMPUTER`; 
       }
       //UPDATE SCORE !!!
 }
@@ -74,7 +74,7 @@ overlay.addEventListener('click', closeEndGameModal)
 
 function handleClick(playerSelection){
   if(gameOver()){
-    alert(`GAME OVER ${roundWinner} WON`)
+    alert(`--- GAME OVER--- ${roundWinner} WON!`)
     restartGame();
     return
   }
