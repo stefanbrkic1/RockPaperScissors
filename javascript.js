@@ -4,7 +4,7 @@ let roundWinner = "";
 
 function playRound(playerSelection, computerSelection){
   if(playerSelection===computerSelection){
-    roundWinner="tie";
+    roundWinner="Tie";
   }
 
   else if(
@@ -13,7 +13,7 @@ function playRound(playerSelection, computerSelection){
     playerSelection==='SCISSORS' && computerSelection==='PAPER')
     {
       playerScore++;
-      roundWinner=`PLAYER`; 
+      roundWinner=`Player`; 
     }
     
     else if(
@@ -22,7 +22,7 @@ function playRound(playerSelection, computerSelection){
       playerSelection==='SCISSORS' && computerSelection==='ROCK')
       {
         computerScore++;
-        roundWinner=`COMPUTER`; 
+        roundWinner=`Computer`; 
       }
       //UPDATE SCORE !!!
 }
@@ -118,11 +118,11 @@ function updateChoices(playerSelection, computerSelection) {
 }
 
 function updateScore() {
-  if (roundWinner === 'tie') {
+  if (roundWinner === 'Tie') {
     scorePara.textContent = "It's a TIE!";
-  } else if (roundWinner === 'player') {
+  } else if (roundWinner === 'Player') {
     scorePara.textContent = 'You WON!';
-  } else if (roundWinner === 'computer') {
+  } else if (roundWinner === 'Computer') {
     scorePara.textContent = 'You LOST!';
   }
 
