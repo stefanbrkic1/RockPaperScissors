@@ -1,4 +1,3 @@
 # RockPaperScissors
-First project I did with JavaScript from Odin Project Foundations.
 
-
+RockPaperScissors Game Implemented in Javascript.
