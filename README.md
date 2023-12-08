@@ -1,6 +1,12 @@
 # RockPaperScissors
 
-RockPaperScissors Game Implemented in Javascript.
+## Game Description
+
+**Welcome to Epic Throwdown: Online Rock, Paper, Scissors Battle**
+
+Embark on an exhilarating journey of strategy and quick thinking with our online rendition of the timeless classic: Rock, Paper, Scissors! Join players from around the globe in "Epic Throwdown," where you can engage in epic battles of wits and reactions to prove your dominance in this age-old game of chance.
+
+<br>
 
 ## Preview
 
@@ -13,10 +19,16 @@ RockPaperScissors Game Implemented in Javascript.
 
 <br>
 
-## RockPaperScissors | Game Description
+<!-- ACKNOWLEDGMENTS -->
 
-** Welcome to Epic Throwdown: Online Rock, Paper, Scissors Battle**
+## Acknowledgments
 
-Embark on an exhilarating journey of strategy and quick thinking with our online rendition of the timeless classic: Rock, Paper, Scissors! Join players from around the globe in "Epic Throwdown," where you can engage in epic battles of wits and reactions to prove your dominance in this age-old game of chance.
+- Inspiration by [The Odin Project](https://www.theodinproject.com/)
 
 <br>
+
+## Author
+
+👤 **stefanbrkic1**
+
+- GitHub: [stefanbrkic1](https://github.com/stefanbrkic1)
